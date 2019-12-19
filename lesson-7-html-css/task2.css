@@ -1,0 +1,6 @@
+ul{list-style-type: disc;}
+a{font-weight: bold; text-decoration: none;}
+a[href*="it-academy"]{color: blue; }
+a[href*="yandex"]{color: orange;}
+a[href*="google"]{color: grey;}
+a[target~="_blank"]:after{content: "\21f1"; }
