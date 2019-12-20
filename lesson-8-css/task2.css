@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+nav{
+  width: 100%;
+}
+ul{
+  list-style: none;
+  background: purple;
+  width: inherit;
+  font-family: 'Oswald';
+  font-size: 200%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+nav ul li:nth-child(n+15) {
+  position: absolute;
+  margin-right: 25px;
+  right: 0;
+}
+li{
+  display:inline-block;
+  margin-left: 25px;
+}
+a:hover{
+  color: grey;
+  background-color: white;
+}
