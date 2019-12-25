@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.bottom-menu{
+  min-width: 450px;
+  max-width: 600px;
+  padding: 10px;
+  margin: 20px auto;
+  white-space: nowrap;
+  background: ghostwhite;
+}
+
+.bottom-menu a{
+  display: inline-block;
+  min-width: 20px;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  background: ghostwhite;
+  border-radius: 3px;
+  border: 1px solid grey;
+  color: purple;
+}
+
+.previous::before{
+  content: '\00ab';
+}
+
+.first::before{
+  content: '\00ab';
+}
+
+.next::after{
+  content: '\00bb';
+}
+
+.last::after{
+  content: '\00bb';
+}
+
+span {
+  color: grey;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+.previous+a{
+  margin-left: 15px;
+}
+
+div a:nth-child(12){
+  margin-right: 15px;
+}
+div a:hover{
+  color:white;
+  background: purple;
+}

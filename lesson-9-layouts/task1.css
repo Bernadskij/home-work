@@ -1,0 +1,75 @@
+div{
+  display: flex;
+  flex-direction: row;
+}
+
+.red{
+  margin-left: 10px;
+  display: inline-block;
+  background: red;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+
+}
+
+.green{
+  margin-left: 10px;
+  display: inline-block;
+  background: green;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+}
+
+.blue{
+  margin-left: 10px;
+  display: inline-block;
+  background: blue;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+}
+
+label{
+  display: block;
+}
+
+input[type~="checkbox"]{
+  display: none;
+}
+label[for~="red"]{
+  color: red;
+  text-decoration: underline;
+}
+
+label[for~="green"]{
+  color: green;
+  text-decoration: underline;
+}
+
+label[for~="blue"]{
+  color: blue;
+  text-decoration: underline;
+}
+label + label{
+  margin-left: 20px;
+}
+
+#red:checked ~ .red{
+  display: none;
+}
+
+#green:checked ~ .green{
+  display: none;
+}
+
+#blue:checked ~ .blue{
+  display:none;
+}
