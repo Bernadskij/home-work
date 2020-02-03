@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<script>
+    'use strict';
+    var a = prompt('введите первое число функции pow(a,b): ');
+    var b = prompt('введите второе число функции pow(a,b): ');
+    function fuddyDuddy (a, b) {
+          var x = a;
+          for (var i = 1; i < b; i++){
+            x *=a;
+        }
+        return x;
+    }
+    console.log(fuddyDuddy(a,b));
+</script>
+</body>
+</html>
